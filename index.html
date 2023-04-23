@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador cripto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container header">
+        <h1>Cotizador de Criptomonedas</h1>
+        <p class="intro">En el formulario a continuación, seleccione la moneda que quiera cotizar y los resultados se mostrarán en tiempo real</p>
+    </header>
+
+    <section class="container grid">
+        
+        <div class="formulario">
+            <form id="formulario">
+                <fieldset class="fieldset">
+                    <div>
+                        <label>Elige tu moneda</label>
+                        <select class="margin" value="" id="moneda">
+                            <option value="" selected disabled>Elige aquí</option>
+                            <option value="USD">Dolar Estadounidense</option>
+                            <option value="EUR">Euro</option>
+                            <option value="GBP">Libra</option>
+                            <option value="ARS">Peso Argentino</option>
+                            <option value="BRL">Real</option>
+                            <option value="MEX">Peso Mexicano</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Elige tu Criptomoneda</label>
+                        <select value="" id="cripto">
+                            <option value="" selected disabled>Elige aquí</option>
+                        </select>
+                    </div>
+
+                    <input class="btn-enviar" type="submit" value="Cotizar">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="img-cripto">
+            <img src="img/cryptomonedas.png" alt="Iconos cryptomonedas">
+        </div>
+
+        <div class="results" id="result"></div>
+    </section>
+
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
